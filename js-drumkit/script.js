@@ -7,18 +7,20 @@ document.addEventListener("keydown", (e) => {
   drumBtns.forEach((btn) => {
     if (btn.classList.contains(key)) {
       btn.classList.add("active");
-      setTimeout((btn) => {
-        btn.removeClass("active");
-      }, 100);
+      
     }
   });
 });
 
+drumBtns.forEach(btn => {
+  btn.addEventListener('transitionend', (e) => {
+    btn.classList.remove("active");
+  })
+})
+
 document.addEventListener("keydown", (e) => {
   let key = e.code[3];
-  sounds.forEach((sound) => {
-    if (sound.classList.contains(key)) {
-      sound.play();
-    }
-  });
+  const audio = document.querySelector(`audio[class="${key}"]`);
+  console.log(audio);
+  audio.play();
 });
