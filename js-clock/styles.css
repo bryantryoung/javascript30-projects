@@ -1,61 +1,58 @@
-.digital-clock{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-    font-size: 3rem;
-    width: 30vh;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 20%;
-    font-size: 4rem;
-    border: 7px solid gray;
-    padding: 20px;
-    box-shadow: 2px 2px black;
-    border-radius: 4px;
-    background-color: rgb(195, 245, 221);
+.digital-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  font-size: 3rem;
+  width: 30vh;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-left: 20%;
+  font-size: 4rem;
+  border: 7px solid gray;
+  padding: 20px;
+  box-shadow: 2px 2px black;
+  border-radius: 4px;
+  background-color: rgb(195, 245, 221);
 }
 .main-container {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    min-height: 100vh;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  min-height: 100vh;
 }
 .clock .second-hand {
-    background-color: rgb(165, 165, 165);
+  background-color: rgb(165, 165, 165);
 }
 .clock .min-hand {
-    background-color: rgb(61, 61, 61);
+  background-color: rgb(61, 61, 61);
 }
 
 .clock-face > div {
-    width: 50%;
-    height: 6px;
-    background-color: black;
-    top: 50%;
-    transform-origin: 100%;
-    transform: rotate(90deg);
-    transition: all 0.05s;
-    position: absolute;
+  width: 50%;
+  height: 6px;
+  background-color: black;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  position: absolute;
 }
 
 .clock-face {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .clock {
-    border: 10px solid black;
-    border-radius: 50%;
-    height: 30vh;
-    width: 30vh;
-    position: relative;
-    margin: 50px auto;
-    padding: 2rem;
-
+  border: 10px solid black;
+  border-radius: 50%;
+  height: 30vh;
+  width: 30vh;
+  position: relative;
+  margin: 50px auto;
+  padding: 2rem;
 }
 body {
-    background: linear-gradient(to right, rgb(157, 235, 185), rgb(102, 225, 141));
+  background: linear-gradient(to right, rgb(157, 235, 185), rgb(102, 225, 141));
 }
-

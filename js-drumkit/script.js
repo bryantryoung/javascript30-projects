@@ -7,16 +7,15 @@ document.addEventListener("keydown", (e) => {
   drumBtns.forEach((btn) => {
     if (btn.classList.contains(key)) {
       btn.classList.add("active");
-      
     }
   });
 });
 
-drumBtns.forEach(btn => {
-  btn.addEventListener('transitionend', (e) => {
+drumBtns.forEach((btn) => {
+  btn.addEventListener("transitionend", (e) => {
     btn.classList.remove("active");
-  })
-})
+  });
+});
 
 document.addEventListener("keydown", (e) => {
   let key = e.code[3];
