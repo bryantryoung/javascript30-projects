@@ -1,0 +1,21 @@
+.drum-btns {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+.drum-btns > div {
+  height: 10vh;
+  width: 10vh;
+  border: 2px solid black;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+.drum-btns .active {
+  box-shadow: 2px 2px blue;
+  transform: scale(1.1);
+}
