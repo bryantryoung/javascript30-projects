@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>CSS Variables Practice</title>
+  </head>
+  <body>
+    <div class="slider-container">
+      <label for="object-size">Adjust Window Size: </label>
+      <input
+        type="range"
+        name="object-size"
+        min="10"
+        max="500"
+        value="50"
+        data-sizing="px"
+      />
+      <label for="blur-amount">Adjust Blur: </label>
+      <input
+        type="range"
+        name="blur-amount"
+        min="0"
+        max="10"
+        value="5"
+        data-sizing="px"
+      />
+      <label for="base-color">Adjust Border Color: </label>
+      <input type="color" name="base-color" />
+    </div>
+    <div class="window-container">
+      <div class="window"></div>
+    </div>
+  </body>
+</html>

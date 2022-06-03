@@ -1,0 +1,36 @@
+:root {
+  --blur-amount: 4x;
+  --base-color: red;
+  --object-size: 50px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 20px;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1450149632596-3ef25a62011a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1662&q=80);
+  background-size: auto;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(var(--blur-amount));
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0px;
+}
+.window-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.window {
+  border: 5px solid var(--base-color);
+  height: var(--object-size);
+  width: var(--object-size);
+  background-color: rgb(198, 198, 198);
+  opacity: 0.4;
+}
