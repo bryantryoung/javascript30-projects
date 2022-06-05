@@ -1,0 +1,70 @@
+body {
+  margin: 0px;
+}
+
+.panel-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.panel > * {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+}
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+.panel.active > *:first-child {
+  transform: translateY(0);
+}
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+.panel.active > *:last-child {
+  transform: translateY(0);
+}
+
+.panel.active {
+  flex: 5;
+  font-size: 3rem;
+}
+
+.panel-container > :first-child {
+  background-image: url(https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1560&q=80);
+  background-position: center;
+  background-size: cover;
+}
+.panel-container > :nth-child(2) {
+  background-image: url(https://images.unsplash.com/photo-1654284152873-c3623e17bc67?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=60);
+  background-position: center;
+  background-size: cover;
+}
+.panel-container > :nth-child(3) {
+  background-image: url(https://images.unsplash.com/photo-1528543606781-2f6e6857f318?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60);
+  background-position: center;
+  background-size: cover;
+}
+.panel-container > :nth-child(4) {
+  background-image: url(https://images.unsplash.com/photo-1654410364338-b7453647a5f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=60);
+  background-position: center;
+  background-size: cover;
+}
+.panel-container > :nth-child(5) {
+  background-image: url(https://images.unsplash.com/photo-1654366124431-cb86d1a1a14e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=60);
+  background-position: center;
+  background-size: cover;
+}
