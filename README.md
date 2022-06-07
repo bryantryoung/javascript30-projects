@@ -29,3 +29,8 @@ Day 06 (type-ahead): Search bar that fetches city and state data (long list of c
 * filtered that data based on user input and then mapped the filtered data to innerHTML content that displayed search results 
 * used regular expressions to match the input to items in the original array: `new RegExp()` constructor with 'gi' - global/insensitive flags
 * `.addEventListener("keyup", function)`  conveniently updates displayed results every time the user presses and lifts a key
+
+Day 07 (array-cardio-2): More exercises with methods on arrays
+* `.some()` will return if at least one element passes a condition, while `.every()` returns whether all elements pass a condition
+* `.find()` will find a desired element and  `.findIndex()` is used to find its index in the array
+* use `.splice()` to remove elements: takes in the parameters (startingIndex, elementsToRemove) with the option of adding elements as well with a third parameter 
