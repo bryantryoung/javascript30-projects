@@ -34,3 +34,8 @@ Day 07 (array-cardio-2): More exercises with methods on arrays
 * `.some()` will return if at least one element passes a condition, while `.every()` returns whether all elements pass a condition
 * `.find()` will find a desired element and  `.findIndex()` is used to find its index in the array
 * use `.splice()` to remove elements: takes in the parameters (startingIndex, elementsToRemove) with the option of adding elements as well with a third parameter 
+
+Day 08 (html-canvas-practice): Practice with creating a canvas and using javascript to allow the user to draw within the entire window while the hue and line width constantly change 
+* created canvas context with const `context = canvas.getContext('2d')` - could also create a 3d context 
+* used the properties of an event object in javascript with an event listener on 'mousedown' to determine the start and end x,y coordinates for the drawing
+* important methods: `context.beginPath()` to begin drawing, `context.moveTo(x,y)` to start the line and `context.lineTo(x, y)` to indicate where the line will be drawn to
