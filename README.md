@@ -39,3 +39,10 @@ Day 08 (html-canvas-practice): Practice with creating a canvas and using javascr
 * created canvas context with const `context = canvas.getContext('2d')` - could also create a 3d context 
 * used the properties of an event object in javascript with an event listener on 'mousedown' to determine the start and end x,y coordinates for the drawing
 * important methods: `context.beginPath()` to begin drawing, `context.moveTo(x,y)` to start the line and `context.lineTo(x, y)` to indicate where the line will be drawn to
+
+Day 09 (dev-tools-practice): Practice with dev-tools as well as several useful console methods
+* you can select an element and break on attribute modification to see the line of code where any attributes are being modified 
+* `console.warn()` and `console.error()` can be used to present a warning or error message to the console 
+* `console.assert()` can be passed a statement as a paramaeter as well as a second parameter containing a message that will be logged to the console if the assertion is false 
+* `console.group()` is a useful method that groups several log statements together based on a variable they share 
+* `console.time()` is a useful way to gauge the time some block of code takes to run, you close this block with `console.timeEnd()`
