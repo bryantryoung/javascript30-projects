@@ -49,4 +49,4 @@ Day 09 (dev-tools-practice): Practice with dev-tools as well as several useful c
 
 Day 10 (js-checkbox): Added an auto-select feature to a list of checkboxes which allows the user to hold shift while selecting and have each box inbetween selected
 * more practice with use of `this` which can sometimes be confusing as to what it actually means; in this case `this` was the checkbox currently selected within the event listener 
-* used the conditional of switching a variable between true/false `variable = !variable` based on whether the `.forEach` loop over checkboxes was at the selected checkbox or the last selected checkbox (whether it was actually inbetween the two selected checkboxes or not)
+* used the conditional of switching a variable between true/false `variable = !variable` based on whether the `.forEach()` loop over checkboxes was at the selected checkbox or the last selected checkbox (whether it was actually inbetween the two selected checkboxes or not)
