@@ -46,3 +46,7 @@ Day 09 (dev-tools-practice): Practice with dev-tools as well as several useful c
 * `console.assert()` can be passed a statement as a paramaeter as well as a second parameter containing a message that will be logged to the console if the assertion is false 
 * `console.group()` is a useful method that groups several log statements together based on a variable they share 
 * `console.time()` is a useful way to gauge the time some block of code takes to run, you close this block with `console.timeEnd()`
+
+Day 10 (js-checkbox): Added an auto-select feature to a list of checkboxes which allows the user to hold shift while selecting and have each box inbetween selected
+* more practice with use of `this` which can sometimes be confusing as to what it actually means; in this case `this` was the checkbox currently selected within the event listener 
+* used the conditional of switching a variable between true/false `variable = !variable` based on whether the `.forEach` loop over checkboxes was at the selected checkbox or the last selected checkbox (whether it was actually inbetween the two selected checkboxes or not)
