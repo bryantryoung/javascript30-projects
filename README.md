@@ -1,6 +1,6 @@
 # javascript30-projects
 
-Each of the projects here are taken from the curriculum of Wes Bos' [Javascript30](https://javascript30.com/) course. This is my journey through 30 days and 30 projects as I continue to build on my own skills. 
+Each of the projects here are taken from the curriculum of Wes Bos' [Javascript30](https://javascript30.com/) course. This is my journey through 30 days and 30 projects as I code along with Wes and continue to build on my own skills. 
 
 Below, I have each day listed as I complete them as well as a few notes for myself on things I learned or better understand as a result of the project.
 
@@ -50,3 +50,7 @@ Day 09 (dev-tools-practice): Practice with dev-tools as well as several useful c
 Day 10 (js-checkbox): Added an auto-select feature to a list of checkboxes which allows the user to hold shift while selecting and have each box inbetween selected
 * more practice with use of `this` which can sometimes be confusing as to what it actually means; in this case `this` was the checkbox currently selected within the event listener 
 * used the conditional of switching a variable between true/false `variable = !variable` based on whether the `.forEach()` loop over checkboxes was at the selected checkbox or the last selected checkbox (whether it was actually inbetween the two selected checkboxes or not)
+
+Day 11 (html5-video-player): An html video player with custom styling and some connected js for additional functionality
+* worked again with data- attributes and retrieving them with js `this.dataset.key` to skip the video forward/back
+* got some practice with HTML5 video, some properties that exist on video players, such as `.paused` `.play()` `.pause()` `.currentTime` and `.duration` and how to change them with javascript functions and event listeners like 'click', 'timeupdate' (or 'progress'), 'mousemove', 'mousedown', 'mouseup', and 'change'
