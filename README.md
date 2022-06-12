@@ -54,3 +54,7 @@ Day 10 (js-checkbox): Added an auto-select feature to a list of checkboxes which
 Day 11 (html5-video-player): An html video player with custom styling and some connected js for additional functionality
 * worked again with data- attributes and retrieving them with js `this.dataset.key` to skip the video forward/back
 * got some practice with HTML5 video, some properties that exist on video players, such as `.paused` `.play()` `.pause()` `.currentTime` and `.duration` and how to change them with javascript functions and event listeners like 'click', 'timeupdate' (or 'progress'), 'mousemove', 'mousedown', 'mouseup', and 'change'
+
+Day 12 (konami-code): Key sequence detection created to make something happen when certain sequence of keys is pressed 
+* used `.splice()` on an array that all the keys are pushed to in order to keep the array maxed out at the maximum length of the key sequence
+* then checked that sequence with `.includes(sequence)` and used `cornify_add()` for a fun visual effect
