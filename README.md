@@ -58,3 +58,8 @@ Day 11 (html5-video-player): An html video player with custom styling and some c
 Day 12 (konami-code): Key sequence detection created to make something happen when certain sequence of keys is pressed 
 * used `.splice()` on an array that all the keys are pushed to in order to keep the array maxed out at the maximum length of the key sequence
 * then checked that sequence with `.includes(sequence)` and used `cornify_add()` for a fun visual effect
+
+Day 13 (js-slide-in-on-scroll): Added a slide-in-on-scroll effect to images on a web page 
+* used the 'scroll' event listener on the window
+* calculated the pixel number location of the bottom of the viewport where half of the image will be scrolled over using the `window.scrollY` and `window.innerHeight` properties on the window and `sliderImage.height` and `sliderImage.offsetTop` properties on the image (element) itself 
+* when it was true that half the image was in view and the user had not scrolled past the image, toggled an 'active' class on the image to transition it
