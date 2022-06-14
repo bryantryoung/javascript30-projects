@@ -63,3 +63,11 @@ Day 13 (js-slide-in-on-scroll): Added a slide-in-on-scroll effect to images on a
 * used the 'scroll' event listener on the window
 * calculated the pixel number location of the bottom of the viewport where half of the image will be scrolled over using the `window.scrollY` and `window.innerHeight` properties on the window and `sliderImage.height` and `sliderImage.offsetTop` properties on the image (element) itself 
 * when it was true that half the image was in view and the user had not scrolled past the image, toggled an 'active' class on the image to transition it
+
+Day 14 (js-practice): Worked on the practical difference between a reference and a copy in javascript data types
+* a variable that contains a string, number, or boolean can be set equal to a new variable and even if the original variable is changed, the new one won't be - the new variable is not a reference to the old one (this is pretty intuitive)
+* arrays and objects are different: a new array or object set equal to an old one will act as a reference, changing it will change the original 
+* in arrrays, one way around this is to slice this whole array, saving it to a new variable: `const newArray = oldArray.slice()` this creates a copy you can change
+* you could also spread into the new array with the old array's elements: `const newArray = [...oldArray]`
+* with objects, you will need to use: `const newObj = Object.assign({}, oldObj, {newProperties})`
+* note: these object and array copies are only 1 level deep, you can only access the "surface-level" values 
