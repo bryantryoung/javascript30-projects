@@ -71,3 +71,9 @@ Day 14 (js-practice): Worked on the practical difference between a reference and
 * you could also spread into the new array with the old array's elements: `const newArray = [...oldArray]`
 * with objects, you will need to use: `const newObj = Object.assign({}, oldObj, {newProperties})`
 * note: these object and array copies are only 1 level deep, you can only access the "surface-level" values 
+
+Day 15 (local-storage): checklist app that stores data locally and updates display with an array of objects that is populated in the DOM every time a change is made 
+* used Local Storage key-value pairs to save data on your local machine so that the page doesn't reset every refresh
+* `localStorage.setItem('items', JSON.stringify(items))` is an example of using the setItem() method in localStorage to create the objects in our array in Local Storage, have to use JSON.stringify because the data will be interpreted as a string - javascript will just use .toString() on things that are not already a string, which won't produce the results you want most of the time
+* when initially loading the page, the array of items is set to `JSON.parse(localStorage.getItem('items')) || []` in order to retrieve the items list from local storage if it exists, or set it to an empty array if there is no data in local storage 
+* used event delegation on input elements to ensure the new elements have event listeners attached to them, even as we updated them in the DOM
