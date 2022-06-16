@@ -77,3 +77,8 @@ Day 15 (local-storage): checklist app that stores data locally and updates displ
 * `localStorage.setItem('items', JSON.stringify(items))` is an example of using the setItem() method in localStorage to create the objects in our array in Local Storage, have to use JSON.stringify because the data will be interpreted as a string - javascript will just use .toString() on things that are not already a string, which won't produce the results you want most of the time
 * when initially loading the page, the array of items is set to `JSON.parse(localStorage.getItem('items')) || []` in order to retrieve the items list from local storage if it exists, or set it to an empty array if there is no data in local storage 
 * used event delegation on input elements to ensure the new elements have event listeners attached to them, even as we updated them in the DOM
+
+Day 16 (mouse-move-shadow): create a cool text shadow effect that follows your mouse around the page
+* got some more practice with using the pixel offsetX and offsetY on an event, like 'mousemove'
+* if you are tracking x and y placement of cursor, you need to isolate any container divs you might move your cursor into (x, y will restart within that container), can be done with a little math: add current x and y to the number of px from the top of the window and from the leftmost side of the window
+* using destructuring for assignments to an object's properties: `let { offsetX: x, offsetY: y } = e` is equivalent to `let x = e.offsetX, let y = e.offsetY`
