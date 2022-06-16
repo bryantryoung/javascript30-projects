@@ -13,7 +13,7 @@ Day 02 (js-clock): Live updating clock built with HTML, CSS, and vanilla JS.
 * css positioning practice, absolute vs relative
 * used the `new Date()` constructor to make the digital and analog clocks update in real time
 
-Day 03 (css-variables-practice): Used CSS variables and some connnected JS to allow a few input sliders to change elements (size of a div) on the page as well as the appearance of the page (backdrop blur, border color or an element)
+Day 03 (css-variables-practice): Used CSS variables and some connnected JS to allow a few input sliders to change elements (size of a div) on the page as well as the appearance of the page (backdrop blur, border color of an element)
 * practiced css custom property syntax and using js to access and change these properties
 * created HTML range inputs with data attributes to manipulate the size of elements
 
