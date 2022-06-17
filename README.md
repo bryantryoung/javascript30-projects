@@ -82,3 +82,7 @@ Day 16 (mouse-move-shadow): create a cool text shadow effect that follows your m
 * got some more practice with using the pixel offsetX and offsetY on an event, like 'mousemove'
 * if you are tracking x and y placement of cursor, you need to isolate any container divs you might move your cursor into (x, y will restart within that container), can be done with a little math: add current x and y to the number of px from the top of the window and from the leftmost side of the window
 * using destructuring for assignments to an object's properties: `let { offsetX: x, offsetY: y } = e` is equivalent to `let x = e.offsetX, let y = e.offsetY`
+
+Day 17 (js-practice-2): sort an array of bands while ignoring articles (a, an. the)
+* use a regular expression to replace all the articles at the beginning of a sentence with nothing: `sentence.replace(/^(a |the |an )/i, "").trim()` and trim any extra whitespace
+* loop over the array with the `.sort()` function, comparing each element after passing it through our function that replaces the articles, this returns a sorted list of the array elements where elements that start with 'a', 'an', or 'the' will be sorted based on the first word that is not an article 
