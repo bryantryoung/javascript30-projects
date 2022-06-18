@@ -86,3 +86,7 @@ Day 16 (mouse-move-shadow): create a cool text shadow effect that follows your m
 Day 17 (js-practice-2): sort an array of bands while ignoring articles (a, an. the)
 * use a regular expression to replace all the articles at the beginning of a sentence with nothing: `sentence.replace(/^(a |the |an )/i, "").trim()` and trim any extra whitespace
 * loop over the array with the `.sort()` function, comparing each element after passing it through our function that replaces the articles, this returns a sorted list of the array elements where elements that start with 'a', 'an', or 'the' will be sorted based on the first word that is not an article 
+
+Day 18 (array-reduce-practice): reduced a nodelist of video times to find the total time of all the videos 
+* worked with `Array.from()` on a nodelist to allow us to use `.map()` and `.reduce()` on the elements 
+* worked with the modulo operator `%` to determine seconds remaining when divided into hours and minutes
