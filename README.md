@@ -90,3 +90,12 @@ Day 17 (js-practice-2): sort an array of bands while ignoring articles (a, an. t
 Day 18 (array-reduce-practice): reduced a nodelist of video times to find the total time of all the videos 
 * worked with `Array.from()` on a nodelist to allow us to use `.map()` and `.reduce()` on the elements 
 * worked with the modulo operator `%` to determine seconds remaining when divided into hours and minutes
+
+Day 19 (webcam-fun): used an HTML5 video element to display a webcam and then added filters on top of that webcam in real time
+* got some practice with the `.getUserMedia({ })` method on the navigator object in order to access the user's media stream
+* set the srcObject of the video element to that local media stream and used `video.play()` to display the video 
+* created an HTML canvas element and used a huge array of the pixel data from the video stream to create filters on top of the user webcam output 
+
+Day 20 (speech-recognition): used speech recognition to display user audio input in text form on the page
+* used `window.SpeechRecognition` and the `SpeechRecognition()` constructor to allow the browser to listen from user audio input
+* created a transcript array, mapped that array to the results from the audio input and joined that array to a one string that we then set to the textContent of a <p> element on the page
