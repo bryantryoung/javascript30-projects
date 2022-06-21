@@ -99,3 +99,6 @@ Day 19 (webcam-fun): used an HTML5 video element to display a webcam and then ad
 Day 20 (speech-recognition): used speech recognition to display user audio input in text form on the page
 * used `window.SpeechRecognition` and the `SpeechRecognition()` constructor to allow the browser to listen from user audio input
 * created a transcript array, mapped that array to the results from the audio input and joined that array to a one string that we then set to the textContent of a <p> element on the page
+  
+Day 21 (geolocation): simple geolocation app with a compass that changes direction based on the user's heading direction 
+* utilized `navigator.geolocation(watchPosition)` with a callback function to set  `data.cords.speed` to the displayed speed on the page and rotate the compass based on direction 
