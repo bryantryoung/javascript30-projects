@@ -102,3 +102,8 @@ Day 20 (speech-recognition): used speech recognition to display user audio input
   
 Day 21 (geolocation): simple geolocation app with a compass that changes direction based on the user's heading direction 
 * utilized `navigator.geolocation(watchPosition)` with a callback function to set  `data.cords.speed` to the displayed speed on the page and rotate the compass based on direction 
+  
+Day 22 (js-practice3): created follow along link effect where a highlight transitions to every link that is hovered over, changing size and width to match that of the text 
+* used the `getBoundingClientRect()` method to get the "coordinates" of a link on the page when it is hovered over, saved those coordinates into properties on an object as width, height, and the distance from the top and left of the screen
+* then moved the highlight - just a span element we created in the DOM - which moves to those coordinates with the matching height and width 
+* had to add the distance from top and left to the `window.scrollY` and `window.scrollX` values to account for the user scrolling down
