@@ -107,3 +107,7 @@ Day 22 (js-practice3): created follow along link effect where a highlight transi
 * used the `getBoundingClientRect()` method to get the "coordinates" of a link on the page when it is hovered over, saved those coordinates into properties on an object as width, height, and the distance from the top and left of the screen
 * then moved the highlight - just a span element we created in the DOM - which moves to those coordinates with the matching height and width 
 * had to add the distance from top and left to the `window.scrollY` and `window.scrollX` values to account for the user scrolling down
+  
+Day 23 (text-to-speech): text to speech synthesis with some added functionality 
+* worked with creating a `new SpeechSynthesisUtterance()` object and methods on that object such as `.speak(msg)` to speak a chosen message and `.cancel()` to cancel the speech immediately 
+* used the `.find()` array method to match the selected voice for the utterance to the user-selected voice in the dropdown 
