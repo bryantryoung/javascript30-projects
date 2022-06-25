@@ -111,3 +111,6 @@ Day 22 (js-practice3): created follow along link effect where a highlight transi
 Day 23 (text-to-speech): text to speech synthesis with some added functionality 
 * worked with creating a `new SpeechSynthesisUtterance()` object and methods on that object such as `.speak(msg)` to speak a chosen message and `.cancel()` to cancel the speech immediately 
 * used the `.find()` array method to match the selected voice for the utterance to the user-selected voice in the dropdown 
+  
+Day 24 (sticky-nav): a nav bar that is position absolutely on the page and then sticks to the top when you scroll past it
+* made the transition smooth by adjusting the padding relative to the size of the nav bar when you scroll past it (set the padding-top property to the `nav.offsetHeight` value whenever the element becomes fixed to the top of the page)
