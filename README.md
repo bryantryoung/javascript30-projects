@@ -114,3 +114,14 @@ Day 23 (text-to-speech): text to speech synthesis with some added functionality
   
 Day 24 (sticky-nav): a nav bar that is position absolutely on the page and then sticks to the top when you scroll past it
 * made the transition smooth by adjusting the padding relative to the size of the nav bar when you scroll past it (set the padding-top property to the `nav.offsetHeight` value whenever the element becomes fixed to the top of the page)
+  
+Day 25 (events): practiced with event capture and bubbling and use cases for third parameter options object in event listeners 
+* bubbling: an event will trigger first on the element you interact with and then will trigger on all of the contexts that is nested within (inner box, then outer box, then outermost box, then window, etc.)
+* event capture: events are captured, though, from outermost context first, so you could force the event to trigger in that order (opposite from how it normally would trigger) using `{ capture: true }` in an options object as the third parameter to an `addEventListener( )` function 
+* you can also use `{ once: true }` to have the event listener removed after it triggers once 
+ 
+  
+Day 26 (follow-along-nav): created a nav with a follow-along effect when elements are hovered over 
+* created three different dropdown elements with content that was hidden with `display: none` and `opacity: 0` properties and displayed them with an added class whenever the element was hovered over - `addEventListener('mouseenter', function)`
+* a background div for those dropdowns followed the dropdown around and adjusted to the height and width of each element using the page coordinates `getBoundingClientRect()` of the element 
+* in order to account for the nav itself not necessarily being the top element on the page, we added a calculation in our coordinates object to account for the number of px from top and left that the nav itself is 
