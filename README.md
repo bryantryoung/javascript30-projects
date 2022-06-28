@@ -125,3 +125,8 @@ Day 26 (follow-along-nav): created a nav with a follow-along effect when element
 * created three different dropdown elements with content that was hidden with `display: none` and `opacity: 0` properties and displayed them with an added class whenever the element was hovered over - `addEventListener('mouseenter', function)`
 * a background div for those dropdowns followed the dropdown around and adjusted to the height and width of each element using the page coordinates `getBoundingClientRect()` of the element 
 * in order to account for the nav itself not necessarily being the top element on the page, we added a calculation in our coordinates object to account for the number of px from top and left that the nav itself is 
+
+Day 27 (drag-to-scroll): drag to scroll along a series of elements
+* utilized the `mousemove` `mouseleave` `mouseup` and `mousedown` event listeners to toggle a boolean value representing whether the mouse is down and inside the div, adds an "active" class if true 
+* scrolled within the div by calculating the position of the initial mousedown event `e.pageX` and then "walked" in the direction of the scroll by subtracting the distance in px moved with the mousedown from `scrollLeft` value on the div
+* continuously reassigns that `scrollLeft` property to the distance scrolled
