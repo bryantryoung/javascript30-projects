@@ -130,3 +130,10 @@ Day 27 (drag-to-scroll): drag to scroll along a series of elements
 * utilized the `mousemove` `mouseleave` `mouseup` and `mousedown` event listeners to toggle a boolean value representing whether the mouse is down and inside the div, adds an "active" class if true 
 * scrolled within the div by calculating the position of the initial mousedown event `e.pageX` and then "walked" in the direction of the scroll by subtracting the distance in px moved with the mousedown from `scrollLeft` value on the div
 * continuously reassigns that `scrollLeft` property to the distance scrolled
+
+Day 28 (video-speed-controller): a slider that controlls the playback speed of the video
+* used a `mousemove` event to to change the position of the bar and the playback speed with it 
+* the position of the mouse was stored with `e.pageY - this.offsetTop` to make sure any margins, padding, or anything else wouldn't interfere with us grabbing the exact distance in px from the top of the element we were inside
+* created a percent variable by dividing the previous calculation by the total height of the element
+* set that percent * 100 to the displayed text in the box when the user moves a mouse over it
+* set the playback rate of the video to the percent multiplied by the maximum playback we wanted minus the minimum playbackRate plus the min `percent * (max - min) + min` which sets the playbackRate to the correct number within the bounds of min and max
