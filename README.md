@@ -137,3 +137,7 @@ Day 28 (video-speed-controller): a slider that controlls the playback speed of t
 * created a percent variable by dividing the previous calculation by the total height of the element
 * set that percent * 100 to the displayed text in the box when the user moves a mouse over it
 * set the playback rate of the video to the percent multiplied by the maximum playback we wanted minus the minimum playbackRate plus the min `percent * (max - min) + min` which sets the playbackRate to the correct number within the bounds of min and max
+  
+Day 29 (countdown-timer): simple countdown timer with input buttons and textbox
+* used the `setInterval()` function to set a timer that updates after each second and displays the distance between the future time (desired seconds on the counter + current time) and the current time
+* made sure to use `clearInterval()` with the countdown variable passed as a parameter (the variable that references the interval function) when the timer starts so that it doesn't try to run multiple timers at once
