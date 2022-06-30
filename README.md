@@ -141,3 +141,8 @@ Day 28 (video-speed-controller): a slider that controlls the playback speed of t
 Day 29 (countdown-timer): simple countdown timer with input buttons and textbox
 * used the `setInterval()` function to set a timer that updates after each second and displays the distance between the future time (desired seconds on the counter + current time) and the current time
 * made sure to use `clearInterval()` with the countdown variable passed as a parameter (the variable that references the interval function) when the timer starts so that it doesn't try to run multiple timers at once
+
+Day 30 (whack-a-mole): created a whack-a-mole game with javascript
+* added and removed a class and used css transitions on the moles to make them pop up and down
+* used `setTimeout()` to dictate the total game length as well as the time each individual mole is up for (determined randomly)
+* used `e.isTrusted` on the click events (checked whether that value was true) in order to determine if the click was a real click event - prevents cheated/faking clicks
